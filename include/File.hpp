@@ -14,8 +14,12 @@ class File {
         ~File();
         bool has_mode(const std::ios_base::openmode mode) const;
         void getLines(int strat,int end,std::vector<std::string> &lines) const;
+        double getLinesSize(int strat,int end) const;
         void getLine(int line_num, std::string &line) const;
+        double getLineSize(int line_num) const;
         int getLineCount() const;
         double getFileSize() const;
+        void write(const std::string& text) const;
+        std::fstream& getFileStream() const;
 };
 #endif

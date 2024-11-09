@@ -19,7 +19,6 @@ class File {
         double getLineSize(int line_num) const;
         int getLineCount() const;
         double getFileSize() const;
-        void write(const std::string& text) const;
         std::fstream& getFileStream() const;
 };
 #endif
